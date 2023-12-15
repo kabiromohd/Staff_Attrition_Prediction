@@ -48,11 +48,13 @@ pip install pipenv
   - requests
 
 - Execute the following in the cli:
-step 1
+
+Step 1
 ```
 pipenv shell
 ```
-step 2
+
+Step 2
 ```
 pipenv install gunicorn flask numpy scikit-learn=="1.3.2" requests
 ```
