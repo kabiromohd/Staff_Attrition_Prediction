@@ -107,10 +107,17 @@ You get the below screenshot:
 ### Deploy model locally with Docker
 You can deploy the flask web services to Docker locally by following these steps.
 
-- You need to be in the folder where the environment was setup in my own case "c:\midterm"
+- You need to have Docker desktop installed on your machine and running before you build the image.
+- Create an account on docker web login [Docker Web](https://hub.docker.com)
+- Creating an account on Docker enables setting up of Docker repository which can be used to push the docker image created locally.
+- Docker repo created for the purpose of this project is *"kabiromohd/data_science"*
+- Docker repository was created to enable getting URL for the capstone1 image.
+
+To create the project docker image:
+
+- You need to be in the folder where the environment was setup in my own case "c:\midterm" and all file are present
 - Create a docker repo, which in my case "kabiromohd/data_science".
 - You can create the Docker repo from the web sign in interface of docker [Docker Web](https://hub.docker.com)
-- You need to have Docker desktop installed on your machine and running, before you build the image with the following command
 
 ```
 pipenv shell
@@ -152,24 +159,18 @@ This ends the local deployment to docker.
 
 For cloud deployment [Render](render.com) was used.
 
-- Create a Docker Account 
-- Creating an account on Docker enables setting up of Docker repository which can be used to push the docker image created locally.
-- The docker repo is create on the docker web login [Docker Web](https://hub.docker.com)
-- Docker repo created for the purpose of this project is *"kabiromohd/data_science"*
-- Docker repository was created to enable getting URL for the capstone1 image.
- 
-
-To deploy the docker image to cloud, open a Cli and run the following commands:
+- To deploy the docker image to cloud, open a Cli and run the following commands:
 
 ```
 pipenv shell
 ```
 
-Push the docker image created above to the repo created with the following command:
+- Push the docker image created above to the repo created with the following command:
 
 ```
 docker push kabiromohd/data_science:capstone1
 ```
+
 The image pushed to docker web will appear as in below screenshot
 
 ![Docker Web](https://github.com/kabiromohd/Staff_Attrition_Prediction/assets/121871052/4fa96c59-5927-4a6b-9aba-f97cf2ab622b)
@@ -183,11 +184,13 @@ The image pushed to docker web will appear as in below screenshot
   
 ![Render Deployment](https://github.com/kabiromohd/Staff_Attrition_Prediction/assets/121871052/5347603c-8b89-47e6-a70d-c61edb297520)
 
+
 ### Deployment Link
 
 [My Capstone 1 Deployment Link from Render](https://ml-zoomcamp-capstone1.onrender.com)
 
-### To interact with the docker image deployed to Render cloud Servicesr
+### To interact with the docker image deployed to Render cloud Services
+
 - copy the render deployment link and place in the *predict_test_render.py* script as "host".
 - *predict_test_render.py* has already prepared data point to be used to test the model deployed to cloud.
 - for this project, the deployment link has already been provided in the .py script. It can be executed as illustrated below:
