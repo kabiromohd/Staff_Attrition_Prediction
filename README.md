@@ -84,6 +84,7 @@ You get the below screenshot:
 ![run predict](https://github.com/kabiromohd/Staff_Attrition_Prediction/assets/121871052/742485a2-1f4a-40f2-ac6c-ac2d0068fe10)
 
 Open another fresh cli and run the following:
+
 Step 1
 ```
 pipenv shell
