@@ -60,7 +60,7 @@ pip install pipenv
   pipenv install gunicorn flask numpy scikit-learn=="1.3.2" requests
   ```
 
-- To copies of the project and dependencies, clone the repo.
+- To get copies of the project and dependencies, clone the repo.
 - The copied files should be placed in the virtual environment folder after being cloned via below command.
 
   ```
