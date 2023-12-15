@@ -83,7 +83,9 @@ You get the below screenshot:
 
 ![run predict](https://github.com/kabiromohd/Staff_Attrition_Prediction/assets/121871052/742485a2-1f4a-40f2-ac6c-ac2d0068fe10)
 
-Open another fresh cli and run the following:
+To test the flask web services deployment a data point has been created in *predict_test.py* file.
+NB: You need to be in the folder where the environment was setup in my own case "c:\midterm"
+Open another fresh Cli and run the following:
 
 Step 1
 ```
