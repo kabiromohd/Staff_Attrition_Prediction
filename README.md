@@ -50,35 +50,35 @@ pip install pipenv
 
 - Execute the following in the cli:
 
-Step 1
-```
-pipenv shell
-```
+  Step 1
+  ```
+  pipenv shell
+  ```
 
-Step 2
-```
-pipenv install gunicorn flask numpy scikit-learn=="1.3.2" requests
-```
+  Step 2
+  ```
+  pipenv install gunicorn flask numpy scikit-learn=="1.3.2" requests
+  ```
 
 - To copies of the project and dependencies, clone the repo.
 - The copied files should be placed in the virtual environment folder after being cloned via below command.
 
-```
-git clone https://github.com/kabiromohd/Staff_Attrition_Prediction.git
-```
+  ```
+  git clone https://github.com/kabiromohd/Staff_Attrition_Prediction.git
+  ```
 
 ### Model deployment to web services
 - Flask was used for web deployment via *predict.py* script. To test the flask web deployment execute the following:
 
-Step 1
-```
-pipenv shell
-```
+  Step 1
+  ```
+  pipenv shell
+  ```
 
-Step 2
-```
-python predict.py
-```
+  Step 2
+  ```
+  python predict.py
+  ```
 
 - Below screenshot illustrates output:
 
@@ -88,15 +88,15 @@ python predict.py
 
 - Open another fresh Cli and run the following:
 
-Step 1
-```
-pipenv shell
-```
+  Step 1
+  ```
+  pipenv shell
+  ```
 
-Step 2
-```
-python predict_test.py
-```
+  Step 2
+  ```
+  python predict_test.py
+  ```
 
 - Below screenshot illustrates the output:
 
@@ -117,40 +117,41 @@ python predict_test.py
   - Create a docker repo, which in my case "kabiromohd/data_science".
   - You can create the Docker repo from the web sign in interface of docker [Docker Web](https://hub.docker.com)
 
-```
-pipenv shell
-```
+  ```
+  pipenv shell
+  ```
 
-- Create docker image by running the following:
+  - Create docker image by running the following:
 
-```
-docker build -t kabiromohd/data_science:capstone1 .
-```
+  ```
+  docker build -t kabiromohd/data_science:capstone1 .
+  ```
 
-- followed by this docker command which runs the docker image created
+  - followed by this docker command which runs the docker image created
 
-```
-docker run -it --rm -p 6090:6090 kabiromohd/data_science:capstone1
-```
+  ```
+  docker run -it --rm -p 6090:6090 kabiromohd/data_science:capstone1
+  ```
 
-- If the two commands run successfully below screenshot will be seen:
+  - If the two commands run successfully below screenshot will be seen:
 
 ![Docker Deployment](https://github.com/kabiromohd/Staff_Attrition_Prediction/assets/121871052/a7f86a23-a33f-4e48-b2dc-0fa7d8ec4279)
 
 - To test the local Docker deployment:
-Open another created virtual environment Cli and run below command to see prediction. The output should be the same as a the flask web services deployment.
+  - Open another created virtual environment Cli and run below command to see prediction.
+  - The output should be the same as a the flask web services deployment.
 
-```
-pipenv shell
-```
+  ```
+  pipenv shell
+  ```
 
-Note: *predict_test.py* has already prepared with data point to test the model deployed locally on docker
+  - Note: *predict_test.py* has already prepared with data point to test the model deployed locally on docker
 
-Run below command. 
+  Run below command. 
 
-```
-python predict_test.py
-```
+  ```
+  python predict_test.py
+  ```
 
 This ends the local deployment to docker.
 
