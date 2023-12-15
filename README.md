@@ -67,4 +67,33 @@ git clone https://github.com/kabiromohd/Staff_Attrition_Prediction.git
 ```
 
 ### Model deployment to web services
-flask was used for web deployment via *predict.py* script.
+flask was used for web deployment via *predict.py* script. Test the flask web deployment execute the following:
+NB: You need to be in the folder where the environment was setup in my own case "c:\midterm"
+
+Step 1
+```
+pipenv shell
+```
+
+Step 2
+```
+python predict.py
+```
+You get the below screenshot:
+
+![run predict](https://github.com/kabiromohd/Staff_Attrition_Prediction/assets/121871052/742485a2-1f4a-40f2-ac6c-ac2d0068fe10)
+
+Open another fresh cli and run the following:
+Step 1
+```
+pipenv shell
+```
+
+Step 2
+```
+python predict_test.py
+```
+You get the below screenshot:
+
+![run predict test](https://github.com/kabiromohd/Staff_Attrition_Prediction/assets/121871052/2014c241-82f9-4e58-aff5-a194a9ae2f36)
+
