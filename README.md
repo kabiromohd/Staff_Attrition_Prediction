@@ -12,7 +12,7 @@
 ### Find a Dataset
 ### Overview and Objective of Project
 
-In the dynamic world of business, understanding and predicting employee attribution is crucial. This project harness the power of data and AI to forecast and analyze employee attribution trends. We will have the opportunity to dive deep into HR analytics and explore the factors that influence employee turnover. 
+In the dynamic world of business, understanding and predicting employee attribution is crucial. This project harness the power of data to forecast and analyze employee attrition trends. We will have the opportunity to dive deep into HR analytics and explore the factors that influence employee turnover. 
 
 The data for this project is from [Dataset Link](https://www.kaggle.com/competitions/bct-data-summit/data)
 
