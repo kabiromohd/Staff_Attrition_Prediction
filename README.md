@@ -1,5 +1,5 @@
-# Staff_Attrition_Prediction
-## DatatalksClub ML Zoomcamp Capstone Project 1
+# Staff Attrition Prediction
+## DatatalksClub Machine Learning Zoomcamp Capstone Project
 ## Objectives of Capstone Project:
 - Find a dataset
 - Explore and prepare the data
